@@ -6,7 +6,10 @@ FROM neurodebian:latest
 ## versions of packages and their dependencies
 RUN apt-get update
 
-## Install AFNI
+## Install neurodebian-archive-keyring
+RUN apt-get install -y neurodebian-archive-keyring
+
+## Install AFNI, fsl
 RUN apt-get install -y \
 	afni \
 	fsl-complete
