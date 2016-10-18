@@ -1,5 +1,5 @@
 ## Get latest stable NeuroDebian image
-FROM neurodebian:latest
+FROM ubuntu:yakkety
 
 RUN apt-get update
 
