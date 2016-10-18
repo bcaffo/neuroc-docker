@@ -16,8 +16,8 @@ RUN wget -O- http://neuro.debian.net/lists/wily.us-tn.full | tee /etc/apt/source
 RUN apt-get update
 
 ## Install afni
-RUN apt-get install -y \
-	libgsl0ldbl \
-	libnetcdf7 \
-	afni \
-	fsl-complete
+##RUN apt-get install -y \
+##	libgsl0ldbl \
+##	libnetcdf7 \
+##	afni \
+##	fsl-complete
