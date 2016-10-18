@@ -1,6 +1,8 @@
 ## Get latest stable NeuroDebian image
 FROM neurodebian:latest
 
+RUN apt-get update
+
 ## Install pgp keys (otherwise neurodebian packages will fail to install)
 RUN apt-get install -y gnupg2 gnupg wget
 
