@@ -22,7 +22,7 @@ RUN apt-get install -y \
 	libgsl0ldbl \
 	libnetcdf7 \
 	afni \
-	fsl-complete \
+	fsl-complete 
 
 ## Install R
 RUN apt-get install -y r-base
