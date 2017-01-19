@@ -20,7 +20,7 @@ RUN apt-get update
 ## Install afni, fsl (and dependencies)
 RUN apt-get install -y \
 	libgsl0ldbl \
-	libnetcdf7 \
+##	libnetcdf7 \
 	afni \
 	fsl-complete 
 
