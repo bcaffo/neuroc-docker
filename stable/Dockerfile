@@ -13,7 +13,7 @@ RUN wget -O- http://neuro.debian.net/lists/wily.us-tn.full | tee /etc/apt/source
 RUN echo "deb http://neuro.debian.net/debian wheezy main" >>  /etc/apt/sources.list.d/neurodebian.sources.list
 RUN echo "deb http://neuro.debian.net/debian data main" >>  /etc/apt/sources.list.d/neurodebian.sources.list
 RUN echo "deb http://us.archive.ubuntu.com/ubuntu trusty main universe" >>  /etc/apt/sources.list.d/neurodebian.sources.list
-RUN echo "deb http://us.archive.ubuntu.com/ubuntu wily main universe" >>  /etc/apt/sources.list.d/neurodebian.sources.list
+RUN echo "deb http://us.archive.ubuntu.com/ubuntu xenial main universe" >>  /etc/apt/sources.list.d/neurodebian.sources.list
 
 RUN apt-get update
 
