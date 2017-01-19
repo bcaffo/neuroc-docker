@@ -13,14 +13,14 @@ RUN wget -O- http://neuro.debian.net/lists/xenial.us-tn.full | tee /etc/apt/sour
 RUN echo "deb http://neuro.debian.net/debian wheezy main" >>  /etc/apt/sources.list.d/neurodebian.sources.list
 RUN echo "deb http://neuro.debian.net/debian data main" >>  /etc/apt/sources.list.d/neurodebian.sources.list
 RUN echo "deb http://us.archive.ubuntu.com/ubuntu trusty main universe" >>  /etc/apt/sources.list.d/neurodebian.sources.list
-RUN echo "deb http://us.archive.ubuntu.com/ubuntu xenial main universe" >>  /etc/apt/sources.list.d/neurodebian.sources.list
+RUN echo "deb http://us.archive.ubuntu.com/ubuntu wily main universe" >>  /etc/apt/sources.list.d/neurodebian.sources.list
 
 RUN apt-get update
 
 ## Install afni, fsl (and dependencies)
 RUN apt-get install -y \
 	libgsl0ldbl \
-##	libnetcdf7 \
+	libnetcdf7 \
 	afni \
 	fsl-complete 
 
