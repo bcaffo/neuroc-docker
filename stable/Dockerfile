@@ -34,3 +34,4 @@ RUN apt-get install -y \
 	libxml2-dev \
 	libssl-dev
 RUN su - -c "R -e \"install.packages('devtools', repos='http://cran.rstudio.com/')\""
+RUN su - -c "R -e \"devtools::install_github(\"hadley/pkgdown\")\""
