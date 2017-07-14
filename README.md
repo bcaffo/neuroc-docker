@@ -5,5 +5,5 @@ Docker images for the NeuroConductor project
 Docker image with major NeuroConductor stable packages installed (pulled from NeuroConductor github)
 Contains: afni, fsl-complete
 
-## Development
-Development level NeuroConductor docker image 
+## Current
+Bleeding edge Neuroconductor packages. This contains the current version of each package that passed the CI tests. 
