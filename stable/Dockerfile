@@ -33,5 +33,10 @@ RUN apt-get install -y \
 	libcurl4-gnutls-dev \
 	libxml2-dev \
 	libssl-dev
+#Install devtools
 RUN su - -c "R -e \"install.packages('devtools', repos='http://cran.rstudio.com/')\""
+#Install hadley/pkgdown to build articles and references
 RUN su - -c "R -e \"devtools::install_github('hadley/pkgdown')\""
+#Install bioconductor (needed for several neuroc packages)
+RUN su - -c "R -e \"source(\"https://bioconductor.org/biocLite.R\")\" -e \"biocLite(ask=FALSE)\""
+
