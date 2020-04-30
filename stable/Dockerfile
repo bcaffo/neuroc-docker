@@ -41,3 +41,21 @@ RUN set -x \
 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata \
 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get \
 	&& rm -rf /var/lib/apt/lists/*
+	
+RUN apt-get update
+
+## Install afni, fsl (and dependencies)
+RUN apt-get install -y \
+	libgsl2 \
+	libnetcdf7 \
+	afni \
+	fsl-complete 
+
+## Install R
+RUN apt-get install -y r-base
+
+## Install devtools (and dependencies)
+RUN apt-get install -y \
+	libcurl4-gnutls-dev \
+	libxml2-dev \
+	libssl-dev
